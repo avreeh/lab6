@@ -26,5 +26,10 @@ function addProjectDetails(e) {
 	// get rid of 'project' from the front of the id 'project3'
 	var idNumber = projectID.substr('project'.length);
 
+	var projectHTML ='<a href="#" class="thumbnail">' +
+	'<img src="' + result['image'] + '"class="img">'+
+	'<p>' + result['title'] + '</p>' +
+	'<p><small>' + result['date'] + '</small></p></a>';
+
 	console.log("User clicked on project " + idNumber);
 }
